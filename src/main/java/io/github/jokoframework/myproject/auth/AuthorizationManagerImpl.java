@@ -51,6 +51,8 @@ public class AuthorizationManagerImpl implements JokoAuthorizationManager {
                 .antMatchers("/**/heartbeat").permitAll()
                 .antMatchers(ApiPaths.COUNTRIES).permitAll()
                 .antMatchers(ApiPaths.API_SESSIONS).hasAnyAuthority(ADMIN.name())
+                .antMatchers(ApiPaths.LOCK_DESKTOP).hasAnyAuthority(ADMIN.name())
+                .antMatchers(ApiPaths.UNLOCK_DESKTOP).hasAnyAuthority(ADMIN.name())
                 // Users
                 .antMatchers(ApiPaths.ROOT_USERS,
                         ApiPaths.USERS_HEARTBEAT,

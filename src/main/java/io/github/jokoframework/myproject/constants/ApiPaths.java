@@ -13,6 +13,8 @@ public class ApiPaths {
     public static final String SUFFIX_HEART_BEAT = "/heartbeat";
     
     public static final String API_SECURE = "/api/secure";
+    public static final String LOCK_DESKTOP = API_SECURE + "/lock-desktop";
+    public static final String UNLOCK_DESKTOP = API_SECURE + "/unlock-desktop";
 
     /**
      * routes for joko
@@ -45,7 +47,7 @@ public class ApiPaths {
     public static final String PERSON_BY_NAME = ROOT_PERSON + "/{name}";
 
     public static final String PERSON_CSV = ROOT_PERSON + "/csv";
-    
+
     private ApiPaths() {
         
     }
